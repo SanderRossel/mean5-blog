@@ -1,0 +1,24 @@
+//- Here is a mixin.
+mixin lorem
+  h2 First paragraph of Lorem Ipsum...
+  p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam tincidunt sodales lacus pharetra laoreet. Nunc sagittis, leo id euismod fringilla, massa neque tincidunt ante, ac pharetra quam justo a metus. Nulla euismod pellentesque mollis. Quisque eget nisl nisl. Sed semper ullamcorper efficitur. Duis commodo, tellus in viverra efficitur, nunc purus mattis sapien, quis pharetra orci tortor eu augue. Nam maximus efficitur sapien vitae lobortis. Donec vel varius quam. In hac habitasse platea dictumst. Etiam malesuada arcu dapibus ornare lacinia. Cras pharetra imperdiet purus ut finibus. In nisi magna, mattis condimentum suscipit in, sollicitudin eu libero.
+
+h1 Mixins
+//- Mixin usage is a big plus!
++lorem
++lorem
++lorem
+
+h2 Animals
+- var animals = ['Cat', 'Dog', 'Goldfish'];
+
+//- A mixin with a parameter and JavaScript!
+mixin isKnownAnimal(animal)
+  if animals.indexOf(animal) >= 0
+    p= 'The ' + animal + ' is a known animal.'
+  else
+    p= 'The ' + animal + ' is not a known animal!'
+
++isKnownAnimal('Cat')
++isKnownAnimal('Dog')
++isKnownAnimal('Parrot')

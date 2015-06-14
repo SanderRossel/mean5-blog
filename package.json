@@ -1,0 +1,8 @@
+{
+  "name": "mean5-blog",
+  "version": "1.0.0",
+  "dependencies": {
+    "express": "^4.12.4",
+    "jade": "^1.11.0"
+  }
+}

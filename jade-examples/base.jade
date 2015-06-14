@@ -1,0 +1,28 @@
+html
+  head
+    style(type="text/css").
+      html {
+        position: relative;
+        min-height: 100%;
+      }
+
+      body {
+        margin: 0 0 100px;
+      }
+      
+      footer {
+        background-color: #41a62a;
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        height: 100px;
+        width: 100%;
+      }
+    block head
+  body
+    div#content
+      p This is the content!
+      block content
+    footer
+      p This is the footer!
+      block footer
